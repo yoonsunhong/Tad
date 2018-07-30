@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=medium-dpi" />
+  <title> T.Ad </title>
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/mediequery.css" />
+  <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <!--[if lt IE 9]>
+	<script type="text/javascript" src="js/html5.js"></script>
+	<script type="text/javascript" src="js/respond.min.js"></script>
+  <![endif]-->
+  <script type="text/javascript">
+	$(document).ready(function (){
+		$("#slider1").load("include/slider.html");
+		$("#tab1").load("include/tab.html");
+		$("#gnb").load("include/gnb.html");
+	});
+  </script>
+ </head>
+
+ <body>
+	<!-- ========= header ========= -->
+	<header id="mainHeader">
+		<div class="head_top main_top">
+			<div class="area">
+				<h1 class="logo f_l"><a href="index.html"><img src="images/common/logo.png" alt="티에드 로고"></a></h1>
+				<button type="button" class="menu_ico">
+					<span class="menu_bar"></span>
+					<span class="menu_bar"></span>
+					<span class="menu_bar"></span>
+				</button>
+				<nav id="gnb" class="f_r"><!-- gnb 부분 --></nav>
+			</div>
+		</div>
+		<div class="slider" id="slider1"><!-- slider 부분 --></div>
+	</header>
+	<!-- ========= //header ========= -->
+
+	<!-- ========= content ========= -->
+	<section id="content" class="clear">
+		<div class="area">
+			<h2 class="tit">Portfolio</h2>
+			<div class="tab" id="tab1"><!-- tab 영역 --></div>
+			<div id="popup" class="clear area">
+				<div>
+					<img class="f_l" src="" alt="">
+					<div class="f_l" style="">
+						<h3 class="pop_tit"></h3>
+						<p class="pop_cnt"></p>
+					</div>
+				</div>
+				<a href="" class="close">닫기</a>
+			</div>
+			<div id="popBg"></div>
+		</div>
+	</section>
+	<!-- ========= //content ========= -->
+
+	<!-- ========= footer ========= -->
+	<footer id="footer">
+		<div class="foo_top">
+			<div class="area">
+				<h5><img src="images/common/webhard_logo.jpg" width="86" height="14" border="0" alt="Webhard 로고"></h5>
+				<a href="http://www.webhard.co.kr" target="_blank" class="web_shortcut">웹하드 바로가기</a>
+				<span class="id">아이디: tadco</span>
+				<span class="pwd">비밀번호: tadco</span>
+			</div>
+		</div>
+		<div class="foo_btm">
+			<div class="area">
+				<p class="pho_num">032-328-7707(8)</p>
+				<div class="cpn_cnt">
+					<p>
+						<span class="blank f_b">티.에드(TAD)</span>|<span class="blank">대표 : 김경태</span>|<span class="blank">사업자번호 : 130-31-9997X</span>|<span class="blank last_blank">경기도 부천시 소향로 13번길 14-16 대맥프라자 804호</span>
+					</p>
+					<p>
+						<span class="blank">Tel 032.328.7707-8</span>|<span class="blank">Fax 070.4324.0043</span>|<span class="blank last_blank">Email : tademail@naver.com</span></p>
+					</p>
+				</div>
+				<address>Copyrights 2016 TAD All Rights Reserved.</address>
+			</div>
+		</div>	
+	</footer>
+	<!-- ========= //footer ========= -->
+	<div class="opa"></div>
+ </body>
+</html>

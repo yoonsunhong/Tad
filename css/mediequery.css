@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* gnb */
+.menu_ico{display:none;float:none;position:absolute;top:50%;right:0;width:20px;margin:-11px 15px 0 0;padding: 0;border:none;border-radius: 0;}
+.menu_bar{display:none;width: 100%;height: 2px;margin: 4px 0;background:#fff;outline:none}
+
+.opa{display:none;position:fixed;top:0px;left:0px;width:100%;height:100%;background:#000;opacity:0;filter:"Alpha(opacity=0)";}
+
+.close_btn{display:none;width:14px;height:14px;position:absolute;top:18px;right:15px;background-image:url("../images/common/close_btn.png");background-repeat:no-repeat;background-position:0 0;background-size:14px 14px}
+
+.gnb_tit{display:none;height:50px;line-height:50px;padding-left:45px;background-color:#000;background-image:url("../images/common/home.png");background-repeat:no-repeat;background-position:20px 50%;background-size:16px 16px;color:#fff;font-size:16px;}
+
+/* -------- 미디어쿼리 --------  */
+@media all and (max-width:600px) {
+	.area{width:600px;margin:0px auto;}
+
+	#mainHeader .logo, #subHeader .logo{margin-left:15px;}
+
+	.menu_ico, .menu_bar, .close_btn{display:block;}
+	#gnb{position:fixed;width:200px;height:100%;padding-top:0;background:#fff;position:absolute;top:0px;left:-200px;}
+	.gnb_tit{display:block;}
+	#subHeader #gnb .gnb_tit a{color:#fff}
+	#gnb.mobile{left:0px;}
+	#gnb li{float:none;height:40px;line-height:40px;border-bottom:1px solid #d5d5d5;margin-right:0}
+	#gnb li a{padding-left:20px;color:#777;}	
+	.close_btn{display:block;}
+
+	#slider1 .prev_next a{width:50px;height:50px;background-size:cover;}
+	#slider1 .next{background-position:-50px 0;}
+
+	#tab1 ul li button{font-size:11px;}
+	#tab1 ul li button, #tab1 ul li.on button, #tab1 ul li:hover button, #tab1 ul li button:focus{border:0;background-image:url("../images/main/tab_tit.jpg");background-repeat:no-repeat;background-position:100% 50%;background-size:1px 20%;font-size:11px;}
+	#tab1 ul li button{width:22%;}
+	#tab1 ul .tab2 button{width:20%;left:22%;}
+	#tab1 ul .tab3 button{width:20%;left:42%;}
+	#tab1 ul .tab4 button{width:20%;left:62%;}
+	#tab1 ul .tab5 button{width:20%;left:82%;}
+	#tab1 ul li ul li .tab_cnt .tab_img img{width:inherit;}
+	#tab1 ul li ul li{width:100%;}
+	.bor_B{display:none}
+
+	
+
+	/* ==========---------- popup ----------========== */
+	#popup img{width:100%;}
+	#popup > div div{padding:5px 0 0 0;}
+	#popup .close{width:20px;height:20px;background-size:20px 20px;}
+
+	/* ==========---------- about ----------========== */
+	/* Business Concept */
+	.txt_h1{font-size:18px}
+	.txt_h2{font-size:14px}
+
+	.bsn_cct img{width:100%;height:inherit;}
+	.bsn_cct .cnt{width:100%;height:100px;padding:20px 15px;}
+	.bsn_cct .cnt h4{font-size:18px}
+	.bsn_cct .cnt p{font-size:14px}
+
+	/* Tad Service */
+	.tad_svc li, .tad_svc li div{width:100%;}
+	.tad_svc li h4, .tad_svc li p{text-align:center;}
+}
